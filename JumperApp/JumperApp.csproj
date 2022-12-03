@@ -38,8 +38,17 @@
     <ApplicationIcon>Resources\Попрыженок.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -66,7 +75,89 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="AppDataFile\Agent.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\ChangeOfPriority.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\ConnectOdb.cs" />
     <Compile Include="AppDataFile\FrameObj.cs" />
+    <Compile Include="AppDataFile\Material.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\MaterialAccountingHistory.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\MaterialType.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\ModelDB_Jumper.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDB_Jumper.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\ModelDB_Jumper.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\ModelDB_Jumper.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDB_Jumper.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\OperationComposition.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\OperationType.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\OrderStatus.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\OrganizationType.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\Product.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\ProductSale.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\ProductType.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\Specification.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\SpecificationComposition.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\sp_helpdiagrams_Result.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\Standard.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\StandardType.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\Supplier.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\sysdiagrams.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\Unit.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDataFile\Warehouse.cs">
+      <DependentUpon>ModelDB_Jumper.tt</DependentUpon>
+    </Compile>
     <Compile Include="JumperWindow.xaml.cs">
       <DependentUpon>JumperWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -139,6 +230,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="AppDataFile\ModelDB_Jumper.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelDB_Jumper.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AppDataFile\ModelDB_Jumper.edmx.diagram">
+      <DependentUpon>ModelDB_Jumper.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -283,6 +382,21 @@
     <Resource Include="Resources\agents\agent_98.png" />
     <Resource Include="Resources\agents\agent_99.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="AppDataFile\ModelDB_Jumper.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelDB_Jumper.Context.cs</LastGenOutput>
+      <DependentUpon>ModelDB_Jumper.edmx</DependentUpon>
+    </Content>
+    <Content Include="AppDataFile\ModelDB_Jumper.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDB_Jumper.edmx</DependentUpon>
+      <LastGenOutput>ModelDB_Jumper.cs</LastGenOutput>
+    </Content>
+    <Resource Include="Resources\agents\picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="59b5efe26c8f45e4973d5001ef8df263" Name="Diagram1">
+        <EntityTypeShape EntityType="tren2_BalashovaModel.Agent" Width="1.5" PointX="8" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.ChangeOfPriority" Width="1.5" PointX="10.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.Material" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.MaterialAccountingHistory" Width="1.5" PointX="3" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.MaterialType" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.OperationComposition" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.OperationType" Width="1.5" PointX="0.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.OrderStatus" Width="1.5" PointX="11" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.OrganizationType" Width="1.5" PointX="5.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.Product" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.ProductSale" Width="1.5" PointX="13.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.ProductType" Width="1.5" PointX="1.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.Specification" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.SpecificationComposition" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.Standard" Width="1.5" PointX="0.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.StandardType" Width="1.5" PointX="1.5" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.Supplier" Width="1.5" PointX="7.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.Unit" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_BalashovaModel.Warehouse" Width="1.5" PointX="0.75" PointY="25.125" IsExpanded="true" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_Agent_OrganizationType" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_ChangeOfPriority_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_ProductSalesHistory_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_Material_MaterialType" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_Material_Unit" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_OperationComposition_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_SpecificationComposition_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_MaterialAccountingHistory_OperationType" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_MaterialAccountingHistory_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_OperationComposition_MaterialAccountingHistory" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_ProductSale_OrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_Product_ProductType" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_Specification_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_Specification_Standard" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_SpecificationComposition_Specification" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_BalashovaModel.FK_Standard_StandardType" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

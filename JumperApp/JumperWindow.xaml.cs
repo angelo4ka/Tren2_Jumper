@@ -26,6 +26,7 @@ namespace JumperApp
         {
             InitializeComponent();
 
+            ConnectOdb.conObj = new tren2_BalashovaEntities();
             FrameObj.frameMain = FrmMain;
 
             FrmMain.Navigate(new PageSubsystem());
