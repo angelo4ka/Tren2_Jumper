@@ -1,0 +1,68 @@
+﻿<Page x:Class="JumperApp.Pages.PageAddEditAgent"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:JumperApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Добавление/редактирование агента">
+    <Page.Resources>
+        <Style TargetType="TextBlock" BasedOn="{StaticResource MainTblck}"/>
+        <Style TargetType="TextBox" BasedOn="{StaticResource MainTbx}"/>
+    </Page.Resources>
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Тип организации: "/>
+                <ComboBox Name="CmbxOrganizationType"
+                          Style="{StaticResource CmbxGeneral}"
+                          Width="200" Height="30"
+                          Padding="4"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Наименование агента: "/>
+                <TextBox Name="TblckName"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Номер телефона: "/>
+                <TextBox Name="TblckPhone"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Электронная почта: "/>
+                <TextBox Name="TblckEmail"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Юридический адрес: "/>
+                <TextBox Name="TblckAddress"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="ФИО директора: "/>
+                <TextBox Name="TblckDirectorsName"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="ИНН: "/>
+                <TextBox Name="TblckINN"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="КПП: "/>
+                <TextBox Name="TblckKPP"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Приоритет: "/>
+                <TextBox Name="TblckPriority"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Путь к логотипу: "/>
+                <TextBox Name="TblckPhotoPath"/>
+            </StackPanel>
+
+            <Button x:Name="BtnSave"
+                    Content="Сохранить"
+                    Click="BtnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

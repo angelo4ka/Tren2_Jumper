@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JumperApp.AppDataFile;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,32 +28,32 @@ namespace JumperApp.Pages
 
         private void BtnAgents_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameObj.frameMain.Navigate(new PageAgents());
         }
 
         private void BtnProduct_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameObj.frameMain.Navigate(new PageProduct());
         }
 
         private void BtnManufacture_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameObj.frameMain.Navigate(new PageManufacture());
         }
 
         private void BtnAddAgent_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameObj.frameMain.Navigate(new PageAddEditAgent());
         }
 
         private void BtnWarehouseMaterials_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameObj.frameMain.Navigate(new PageWarehouseMaterials());
         }
 
         private void BtnEmployees_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameObj.frameMain.Navigate(new PageEmployees());
         }
     }
 }

@@ -71,14 +71,56 @@
       <DependentUpon>JumperWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\PageAddEditAgent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageAgents.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageEmployees.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageManufacture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageSubsystem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageWarehouseMaterials.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\PageAddEditAgent.xaml.cs">
+      <DependentUpon>PageAddEditAgent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageAgents.xaml.cs">
+      <DependentUpon>PageAgents.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageEmployees.xaml.cs">
+      <DependentUpon>PageEmployees.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageManufacture.xaml.cs">
+      <DependentUpon>PageManufacture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageProduct.xaml.cs">
+      <DependentUpon>PageProduct.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PageSubsystem.xaml.cs">
       <DependentUpon>PageSubsystem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageWarehouseMaterials.xaml.cs">
+      <DependentUpon>PageWarehouseMaterials.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

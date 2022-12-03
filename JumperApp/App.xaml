@@ -41,6 +41,14 @@
                 <Setter Property="Margin" Value="5"/>
             </Style.Setters>
         </Style>
+        <!-- Базовый стиль полей выбора значений -->
+        <Style x:Key="CmbxGeneral" TargetType="ComboBox">
+            <Style.Setters>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+                <Setter Property="Margin" Value="5"/>
+            </Style.Setters>
+        </Style>
 
         <!-- Общий стиль для закруглённых borders (границ) -->
         <Style TargetType="Border">
@@ -57,7 +65,7 @@
         <!-- Основной стиль текстовых блоков -->
         <Style x:Key="MainTblck" TargetType="TextBlock" BasedOn="{StaticResource TblckGeneral}">
             <Style.Setters>
-                <Setter Property="Width" Value="235"/>
+                <Setter Property="Width" Value="245"/>
             </Style.Setters>
         </Style>
         <!-- Основной стиль полей ввода текста -->
